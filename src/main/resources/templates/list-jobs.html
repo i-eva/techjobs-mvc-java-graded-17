@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org/">
+git <html xmlns:th="http://www.thymeleaf.org/">
 <head th:replace="~{fragments :: head}">
 </head>
 <body>
@@ -13,10 +13,12 @@
   <!-- TODO #1 - Use a loop to display job results in a table. -->
 
   <table class="job-listing" th:each="job : ${jobs}">
+<!--    Mockup of desired code follows: -->
 <!--    <tr th:each="key : ${jobs}">-->
 <!--      <td th:text="${job.key}"></td>-->
 <!--      <td th:text="${job.value}"></td>-->
 <!--    </tr>-->
+<!--    Went with hardcoding, below. Note: Passed Task 2 tests -->
     <tr>
       <td>ID</td>
       <td th:text="${job.id}"></td>
