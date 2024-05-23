@@ -28,7 +28,7 @@ public class SearchController {
     // searchType = radio button input (columns)
     // searchTerm = text input
 
-    @PostMapping(value = "jobs")
+    @PostMapping(value = "results")
     public String displaySearchResults(Model model, @RequestParam String searchType, @RequestParam String searchTerm) {
         ArrayList<Job> jobs;
         if (searchType.equals("all")){
